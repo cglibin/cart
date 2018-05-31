@@ -1,0 +1,137 @@
+body {
+    height: 100%;
+    background: #222;
+}
+li {
+    list-style: none;
+}
+  
+#app {
+    font-family: 'Roboto Slab', serif;
+}
+
+.header {
+    height: 80px;
+    h2 {
+        color: #fff;
+        font-family: 'Rock Salt';
+        float: left;
+        font-weight: bolder;
+        margin: 10px 20px;
+    }
+    button {
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #fff;
+        transition: all .1s ease-out;
+        &:hover {
+            background: #ddd;
+        }
+    }
+    div {
+        float: right;
+        display: inline;
+        margin: 10px;
+    }
+}
+
+
+
+.fade-transition {
+    transition: all 0.2s ease-out;
+}
+
+.fade-enter, .fade-leave {
+    opacity: 0;
+}
+
+.cart {
+    >div {
+    z-index: 100;
+    background: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    right: 30px;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+        div {
+            text-align: center;
+        }
+    }
+    ul {
+        padding-left: 0px;
+        li {
+            p {
+                margin-bottom: 0;
+                i {
+                    display: inline-block;
+                    width: 10px;
+                    height: 2px;
+                    border-bottom: 4px solid #fff;
+                    border-top: 4px solid #fff;
+                    background: black;
+                    cursor: pointer;
+                    margin-left: 5px;
+                }
+            }
+            
+        }
+    }
+    button {
+        margin: 20px 0 10px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+
+.shop {
+    ul {
+        margin-top: 90px;
+    }
+    li div {
+        margin-left: 30px;
+        margin-right: 70px;
+        padding: 30px;
+        background: #fff;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+    button {
+        color: white;
+        border: 0;
+        background: #333;
+        margin: 0;
+        transition: all .1s ease-out;
+        &:hover {
+            background: #777;
+        }
+    }
+}
+
+.checkout {
+    background: #fff;
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 90px;
+    padding: 50px 60px;
+    span {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .checkout {
+        padding: 30px 40px;
+        h5 {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .shop h3, .checkout h3 {
+        font-size: 3.3em;
+        top: -70px;
+        left: 0px;
+    }
+}
